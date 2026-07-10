@@ -120,3 +120,131 @@ nav {
     font-size: 56px;
     text-align: center;
 }
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 169px;
+    margin-bottom: 132px;
+}
+
+.pricing-head {
+    text-align: center;
+}
+
+.pricing-head h2 {
+    color: #0d1b2aFF;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.pricing-head p {
+    margin-top: 12px;
+    color: #575757FF;
+}
+
+.cardp1 {
+    color: #888888FF;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.cardp2 {
+    color: #888888FF;
+    font-size: 13px;
+}
+
+.card div h2 {
+    color: #0d1b2aFF;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.card ul {
+    color: #333333FF;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.card ul li::marker {
+    color: #2563ebFF;
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pricing-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.cardp1.feature {
+    color: #93c5fdFF;
+}
+
+.feature2 {
+    color: white !important;
+}
+
+.cardp2.pro {
+    color: rgb(255 255 255 / 0.5);
+}
+
+.card.middle {
+    background-color: #0d1b2aFF;
+}
+
+.feature {
+    color: rgb(255 255 255 / 0.8) !important;
+}
+
+.but1 {
+    border: 1px solid #2563ebFF;
+    color: #2563ebFF;
+    background: transparent;
+    border-radius: 8px;
+    padding: 12px 108px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+.but2 {
+    border: 0;
+    background-color: #2563ebFF;
+    color: white;
+    border-radius: 8px;
+    padding: 11px 127px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+.but3 {
+    border: 1px solid #0d1b2aFF;
+    color: #0d1b2aFF;
+    background: transparent;
+    border-radius: 8px;
+    padding: 12px 115px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
