@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
@@ -13,7 +14,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 23.5px 115.5px 24.5px 115.5px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
 }
 
 .menu-items {
@@ -49,16 +52,25 @@ nav {
     min-height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    gap: 320px;
+    text-align: center;
+    gap: 48px;
+    padding: 0 32px;
+}
+
+.banner-text {
+    margin-top: 136px;
+}
+
+.banner-button {
+    margin-bottom: 79px;
 }
 
 .banner div h1 {
     color: white;
     font-size: 80px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .banner div p {
@@ -119,7 +131,9 @@ nav {
 }
 
 .meet {
-    margin: 116px;
+    max-width: 1200px;
+    margin: 116px auto;
+    padding: 0 24px;
 }
 
 .meet h2 {
@@ -138,6 +152,7 @@ nav {
     align-items: center;
     margin-top: 169px;
     margin-bottom: 132px;
+    padding: 0 24px;
 }
 
 .pricing-head {
@@ -230,7 +245,8 @@ nav {
     color: #2563ebFF;
     background: transparent;
     border-radius: 8px;
-    padding: 12px 108px;
+    padding: 12px 0;
+    text-align: center;
     font-size: 14px;
     font-weight: 600;
     width: 100%;
@@ -242,7 +258,8 @@ nav {
     background-color: #2563ebFF;
     color: white;
     border-radius: 8px;
-    padding: 11px 127px;
+    padding: 12px 0;
+    text-align: center;
     font-size: 14px;
     font-weight: 600;
     width: 100%;
@@ -254,16 +271,28 @@ nav {
     color: #0d1b2aFF;
     background: transparent;
     border-radius: 8px;
-    padding: 12px 115px;
+    padding: 12px 0;
+    text-align: center;
     font-size: 14px;
     font-weight: 600;
     width: 100%;
     cursor: pointer;
 }
 
+.hr13 {
+    border: none;
+    height: 1px;
+    background: #e5e7ebFF;
+}
+.hr2 {
+    border: none;
+    height: 1px;
+    background: #ffffff1A;
+}
+
 /* Secure Your Spot (Pricing) Section End */
 
-/* PLACEHOLDER SECTION — AI CHALLENGE Start (Claude) */
+/* PLACEHOLDER SECTION — AI CHALLENGE Start (Using Claude) */
 
 :root {
     --navy: #0B1220;
@@ -279,10 +308,6 @@ nav {
     --amber: #F5B942;
     --sub: #6B7280;
     --sub-dark: #8891A8;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .hack-section {
@@ -582,55 +607,121 @@ nav {
     }
 }
 
-/* PLACEHOLDER SECTION — AI CHALLENGE End (Claude) */
+/* PLACEHOLDER SECTION — AI CHALLENGE End (Using Claude) */
 
 /* Footer Section Start */
 
-footer{
+footer {
     background-color: #0d1b2a;
     padding: 60px 8% 30px;
 }
-.footer-container{
+
+.footer-container {
     max-width: 1200px;
     margin: auto;
 }
 
-.footer-top{
+.footer-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 25px; */
 }
-.social{
+
+.social {
     display: flex;
     align-items: center;
     gap: 25px;
 }
-.social p{
+
+.social p {
     color: white;
 }
-.social a{
+
+.social a {
     background: rgb(255, 255, 255, 0.1);
     color: white;
     border-radius: 50%;
     font-size: 22px;
     padding: 10px;
 }
-.footer-bottom{
+
+.footer-bottom {
     text-align: center;
     color: white;
-    /* margin-top: 25px; */
 }
-.footer-bottom span{
+
+.footer-bottom span {
     color: #418BFD;
     font-weight: bold;
 }
-.footer-container hr{
+
+.footer-container hr {
     border: none;
     height: 1px;
-    background: rgba(255,255,255,0.1);
-    margin:40px 0 25px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 30px 0 25px;
 }
-.social a:hover{
+
+.social a:hover {
     background: #1D4ED8;
 }
+
+
+/* Responsive Section Start (Using Claude) */
+
+@media (max-width: 768px) {
+
+    /* Navbar stacks vertically instead of overflowing */
+    nav {
+        flex-direction: column;
+        gap: 16px;
+        margin: 20px;
+    }
+
+    .menu-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hero text scales down so it doesn't overflow small screens */
+    .banner div h1 {
+        font-size: 40px;
+    }
+
+    .banner div p {
+        font-size: 16px;
+    }
+
+    .button.big {
+        padding: 18px 40px;
+        font-size: 18px;
+    }
+
+    /* Speaker cards and pricing cards stack to one column */
+    .container,
+    .pricing-card {
+        grid-template-columns: 1fr;
+    }
+
+    .meet {
+        margin: 60px auto;
+    }
+
+    .meet h2 {
+        font-size: 36px;
+    }
+
+    .pricing {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    /* Footer stacks logo and social icons instead of squeezing them side by side */
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* Responsive Section End (Using Claude) */
