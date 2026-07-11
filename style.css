@@ -583,3 +583,54 @@ nav {
 }
 
 /* PLACEHOLDER SECTION — AI CHALLENGE End (Claude) */
+
+/* Footer Section Start */
+
+footer{
+    background-color: #0d1b2a;
+    padding: 60px 8% 30px;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 25px; */
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.social p{
+    color: white;
+}
+.social a{
+    background: rgb(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 50%;
+    font-size: 22px;
+    padding: 10px;
+}
+.footer-bottom{
+    text-align: center;
+    color: white;
+    /* margin-top: 25px; */
+}
+.footer-bottom span{
+    color: #418BFD;
+    font-weight: bold;
+}
+.footer-container hr{
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin:40px 0 25px;
+}
+.social a:hover{
+    background: #1D4ED8;
+}
